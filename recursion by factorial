@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int factorail(int n)
+{
+    if(n==0)
+    {
+        return(1);
+    }
+    else
+    {
+        return(n*factorail(n-1));
+    }
+}
+int main() {
+    int num,fact;
+    printf("enter any number to find factorial of any number");
+    scanf("%d",&num);
+fact=factorail(num);
+printf("factroaial of %dis %d",num,fact);
+
+    return 0;
+}
